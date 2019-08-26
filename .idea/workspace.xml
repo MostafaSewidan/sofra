@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf787766-ba0d-4077-a4d3-63f6acd6f00d" name="Default" comment="" />
+    <list default="true" id="cf787766-ba0d-4077-a4d3-63f6acd6f00d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_ltr/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_ltr/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_ltr/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_ltr/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_ltr/logos/sofra.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Adminlte_rtl/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/cities/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/cities/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/cities/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/contacts/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/contacts/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/districts/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/districts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/districts/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/errorMassage.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sofra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sofra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantOffersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantOffersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Offer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_contacts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,103 +58,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="110" column="78" selection-start-line="110" selection-start-column="78" selection-end-line="110" selection-end-column="78" />
+            <state>
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_contacts_table.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state>
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+              <folding>
+                <element signature="e#57#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/en/sofra.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/contacts/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_app_settings_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/contacts/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/sellectorController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-              <folding>
-                <element signature="e#55#82#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/ClientOrderCycleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11220">
-              <caret line="666" column="14" selection-start-line="666" selection-start-column="14" selection-end-line="666" selection-end-column="14" />
-              <folding>
-                <element signature="e#55#77#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/RestaurantOrderCycleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8721">
-              <caret line="518" column="9" selection-start-line="518" selection-start-column="9" selection-end-line="518" selection-end-column="9" />
-              <folding>
-                <element signature="e#55#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/contactsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
-              <folding>
-                <element signature="e#55#77#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Resturant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Client.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="92" column="66" selection-start-line="92" selection-start-column="66" selection-end-line="92" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -126,53 +113,87 @@
       <find>add</find>
       <find>responsejson</find>
       <find>token</find>
+      <find>sidebar-mini</find>
+      <find>uibutton</find>
+      <find>user-pa</find>
+      <find>sidebar-toggle</find>
+      <find>dropdown user user-menu</find>
+      <find>navbar-custom-menu</find>
+      <find>bloo</find>
+      <find>transactio</find>
+      <find>MAIN NAVIGATION</find>
+      <find>online</find>
+      <find>scrp</find>
+      <find>class=&quot;fa fa-envelope-o&quot;</find>
+      <find>Data Table With Full Features</find>
+      <find>Rendering engine</find>
+      <find>class=&quot;content&quot;</find>
+      <find>class=&quot;row&quot;</find>
+      <find>img</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/client_authController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_21_191820_create_clients_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_115301_create_notifications_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_115301_create_contacts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_115300_create_clients_table.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Mail/ResetPassword.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/orders/shipped.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150525_create_clients_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Image.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_products_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/sellectorController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Product.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_offers_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Offer.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantFoodController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantOffersController.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/clientAuthController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_client_resturant_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150525_create_resturants_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Client_resturant.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_orders_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Order_product.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/TokensController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_notifications_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Notification.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantAuthController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Commission.php" />
-        <option value="$PROJECT_DIR$/app/Models/Order.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_contacts_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Client.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/contactsController.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Models/Resturant.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/ClientOrderCycleController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/RestaurantOrderCycleController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_app_settings_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/errorMassage.blade.php" />
+        <option value="F:/Temp/AdminLTE-RTL-master/pages/examples/blank.html" />
+        <option value="$USER_HOME$/Downloads/AdminLTE-RTL-master/index-rtl.html" />
+        <option value="$PROJECT_DIR$/resources/lang/en/lang.php" />
+        <option value="$PROJECT_DIR$/resources/lang/ar/lang.php" />
+        <option value="$PROJECT_DIR$/resources/lang/ar/ar.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/en.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/ar.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/language.php" />
+        <option value="$PROJECT_DIR$/app/Providers/BladeServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
+        <option value="$PROJECT_DIR$/routes/blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="/media/mostafasewidan/tasks/Temp/AdminLTE-2.4.12/AdminLTE-2.4.12/pages/tables/data.html" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/ConfirmDelete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/cities/add.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/districts/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/DistrictController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/districts/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/cities/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/cities/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/CityController.php" />
+        <option value="$PROJECT_DIR$/resources/lang/ar/sofra.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/districts/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/catigories/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/categories/add.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/categories/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/categories/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantOffersController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Offer.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/OfferController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/sofra.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_contacts_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/Contact.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/contacts/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/ContactController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/contacts/show.blade.php" />
       </list>
     </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -257,6 +278,10 @@
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/mikemccabe/json-patch-php" />
+      <path value="$PROJECT_DIR$/vendor/rackspace/php-opencloud" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -265,36 +290,42 @@
     <option name="width" value="728" />
     <option name="height" value="626" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sofra" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="kern&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\parent\xampp\htdocs\tasks\sofra\resources\lang\ar" />
+      <recent name="F:\parent\xampp\htdocs\tasks\sofra\resources\lang\en" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\parent\xampp\htdocs\tasks\sofra\database\migrations" />
-      <recent name="F:\parent\xampp\htdocs\tasks\sofra\app" />
+      <recent name="$PROJECT_DIR$/public/offerPhotos" />
+      <recent name="$PROJECT_DIR$/resources/views/AdminDashBord" />
+      <recent name="$PROJECT_DIR$/resources/views/AdminDashBord/offers" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/public/Adminlte_rtl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,18 +362,57 @@
       <workItem from="1564534067683" duration="20927000" />
       <workItem from="1564754157918" duration="6409000" />
       <workItem from="1564826309579" duration="13221000" />
-      <workItem from="1564963230706" duration="1233000" />
+      <workItem from="1564963230706" duration="6236000" />
+      <workItem from="1565109058456" duration="1336000" />
+      <workItem from="1565110628679" duration="140000" />
+      <workItem from="1565110828703" duration="15684000" />
+      <workItem from="1565369165914" duration="1040000" />
+      <workItem from="1565371252980" duration="597000" />
+      <workItem from="1565541880638" duration="1243000" />
+      <workItem from="1565571758819" duration="3160000" />
+      <workItem from="1565902094536" duration="4576000" />
+      <workItem from="1565965422895" duration="63000" />
+      <workItem from="1565965552038" duration="13335000" />
+      <workItem from="1566146480525" duration="5377000" />
+      <workItem from="1566229648805" duration="12962000" />
+      <workItem from="1566309792351" duration="25456000" />
+      <workItem from="1566747245213" duration="520000" />
+      <workItem from="1566773366808" duration="2134000" />
+      <workItem from="1566781854775" duration="86000" />
+      <workItem from="1566782014394" duration="1670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116184000" />
+    <option name="totallyTimeSpent" value="210566000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.314871" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2344932" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32994923" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="8" weight="0.32994923" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.89334345" weight="0.5143824" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.10665658" side_tool="true" weight="0.33854166" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3282572" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23106061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -354,152 +424,70 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.89334345" weight="0.34087238" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.89334345" weight="0.5143824" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.10665658" side_tool="true" weight="0.3409091" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_21_191820_create_app_settings_table.php" />
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="199">
+          <caret line="33" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/client_authController.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_21_191820_create_clients_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_115301_create_notifications_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_115301_create_contacts_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_115300_create_clients_table.php" />
-    <entry file="file://$PROJECT_DIR$/routes/channels.php">
+    <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150525_create_clients_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/ClientOrderCycleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="330">
+          <caret line="349" column="14" selection-start-line="349" selection-start-column="14" selection-end-line="353" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+        <state relative-caret-position="246">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/ResetPassword.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/CheckLang.php" />
+    <entry file="file://$PROJECT_DIR$/routes/blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="1088">
+          <caret line="64" selection-end-line="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/orders/shipped.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_offers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_products_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantOffersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="78" column="54" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
-          <folding>
-            <element signature="e#55#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantFoodController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="107" selection-start-line="105" selection-start-column="12" selection-end-line="107" />
-          <folding>
-            <element signature="e#55#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/clientAuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="e#55#82#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_client_resturant_table.php">
+    <entry file="file://$PROJECT_DIR$/public/Adminlte_ltr/js/jquery.dataTables.min.js" />
+    <entry file="file://$PROJECT_DIR$/public/Adminlte_ltr/js/dataTables.bootstrap.min.js" />
+    <entry file="file:///media/mostafasewidan/tasks/Temp/AdminLTE-2.4.12/AdminLTE-2.4.12/pages/tables/data.html" />
+    <entry file="file://$PROJECT_DIR$/public/Adminlte_ltr/css/dataTables.bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/confirm_delete.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/ConfirmDelete.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/cities/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#7#52#0#PHP" expanded="true" />
-          </folding>
+          <caret line="20" column="111" selection-start-line="20" selection-start-column="111" selection-end-line="20" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150525_create_resturants_table.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="64">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -510,186 +498,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_order_product_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/districts/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/districts/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="149" column="20" lean-forward="true" selection-start-line="149" selection-start-column="20" selection-end-line="157" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/DistrictController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/lang/ar/sofra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/districts/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/catigories/add.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/cities/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="5" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/City.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/catigories/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/CityController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/cities/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="356">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Order_product.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/categories/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+        <state relative-caret-position="24">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Token.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/categories/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/TokensController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/categories/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-          <folding>
-            <element signature="e#55#80#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="492">
+          <caret line="165" column="104" selection-start-line="165" selection-start-column="104" selection-end-line="165" selection-end-column="104" />
+          <caret line="214" column="104" selection-start-line="214" selection-start-column="104" selection-end-line="214" selection-end-column="104" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_notifications_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/offers/add.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/CategoryController.php" />
+    <entry file="file://$PROJECT_DIR$/app/Models/Resturant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="44" column="26" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Notification.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantOffersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="104" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/resturantAuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="69" column="74" lean-forward="true" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Commission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Category_resturant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Client_resturant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_orders_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="110" column="78" selection-start-line="110" selection-start-column="78" selection-end-line="110" selection-end-column="78" />
+        <state relative-caret-position="442">
+          <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_contacts_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/sellectorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-          <folding>
-            <element signature="e#55#82#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/ClientOrderCycleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11220">
-          <caret line="666" column="14" selection-start-line="666" selection-start-column="14" selection-end-line="666" selection-end-column="14" />
-          <folding>
-            <element signature="e#55#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/RestaurantOrderCycleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8721">
-          <caret line="518" column="9" selection-start-line="518" selection-start-column="9" selection-end-line="518" selection-end-column="9" />
-          <folding>
-            <element signature="e#55#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/contactsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
-          <folding>
-            <element signature="e#55#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Resturant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="220">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="340">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_23_150526_create_app_settings_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="288">
+          <caret line="174" column="37" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/OfferController.php" />
+    <entry file="file://$PROJECT_DIR$/app/Models/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/clientPhotos/2IUk6oeKgXQAoz83PG4b.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/clientPhotos/9mN2lVES0pySkO5MkE3N.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/clientPhotos/oMXuDZBPY0Pyp6SOuMmz.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Adminlte_ltr/img/sasa.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="275" column="35" selection-start-line="275" selection-start-column="35" selection-end-line="275" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="e#57#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/sofra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/contacts/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/contacts/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="92" column="66" selection-start-line="92" selection-start-column="66" selection-end-line="92" selection-end-column="67" />
         </state>
       </provider>
     </entry>

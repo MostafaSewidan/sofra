@@ -47,22 +47,35 @@ class resturantOffersController extends Controller
         }
 
 
+        $resturant = Resturant::find($request->user()->id);
 
-        $offer = Offer::create($request->all());
-        $offer->resturant_id = auth()->user()->id;
-        $offer->save();
+        if($resturant)
+        {
+           $offer =  $resturant->offers()->create(
+                [
+                    'name' => $request->name,
+                    'details' => $request->details,
+                    'start_date' => $request->start_date,
+                    'end_date' => $request->end_date
+                ]);
+
+            $photo = $request->file('photo');
+            $name = str_random(20) . '.' . $photo->getClientOriginalExtension();
+            $photo->move(public_path('/offerPhotos/'),$name);
+
+            $offer->image()->create(['name'=>'/offerPhotos/'.$name]);
 
 
-        $photo = $request->file('photo');
-        $name = str_random(20) . '.' . $photo->getClientOriginalExtension();
-        $photo->move(public_path('/offerPhotos/'),$name);
+            return $this->responsejson(true, 'تم الاضافة بنجاح', [
+                'offer data ' => $offer
+            ]);
+        }else
+        {
+            return $this->responsejson(false, 'restaurant not found');
+        }
 
-        $offer->image()->create(['name'=>'/offerPhotos/'.$name]);
 
 
-        return $this->responsejson(true, 'تم الاضافة بنجاح', [
-            'offer data ' => $offer
-        ]);
     }
 
     public function update_offer(Request $request)

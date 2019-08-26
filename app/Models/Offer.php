@@ -18,7 +18,7 @@ class Offer extends Model
 
     public function image()
     {
-        return $this->morphOne('App\Models\Image');
+        return $this->morphOne('App\Models\Image' , 'imageable');
     }
 
 }

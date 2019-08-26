@@ -13,6 +13,7 @@ class CreateContactsTable extends Migration {
 			$table->string('email');
 			$table->string('phone');
 			$table->string('sms_body');
+			$table->string('is_read')->default('false');
 			$table->timestamps();
 			$table->string('contactable_type');
 			$table->integer('contactable_id');
