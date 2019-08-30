@@ -32,6 +32,10 @@
                 font-family: 'Cairo', sans-serif;
                 text-align: right;
             }
+            input
+            {
+                text-align: right;
+            }
         </style>
 
     {{--****************************************************************************************--}}
@@ -57,6 +61,105 @@
                 font-family: 'Cairo', sans-serif;
 
             }
+            .menu_button
+            {
+                cursor: pointer;
+            }
+
+
+            .btn .label
+            {
+                padding: 0px 5px 0px 5px;
+            }
+
+            #contact_menu
+            {
+                background-color: white;
+                position: absolute;
+                width: 20pc;
+                right: 1px;
+                padding: 0px 1px 5px 2px;
+                list-style-type: none;
+                box-shadow: 4px 7px 13px -11px black;
+                border: 1px solid #9999998a;
+                border-radius: 0px 0px 4px 4px;
+            }
+
+            .menu
+            {
+                overflow: hidden;
+                width: 100%;
+                height: 200px;
+                list-style-type: none;
+                padding: 3px 1px 38px 2px;
+                font-size: 11px;
+            }
+
+            .p
+            {
+                text-align: center;
+                font-size: 17px;
+                margin-top: 3pc;
+                color: #444444;
+            }
+
+            .img-circle
+            {
+                margin: auto 10px auto auto;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+
+            #Complaint
+            {
+
+                color: #721c24;
+                background-color: #f8d7da;
+            }
+
+            #Complaint li
+            {
+                padding: 7px 1px 2px 6px;
+            }
+
+            #Complaint li:hover
+            {
+
+                background-color: #f9b3b9;
+                border-bottom: 1px solid #7a232942;
+            }
+
+            #Suggestion
+            {
+
+                color: #155724;
+                background-color: #d4edda;
+            }
+
+             #Suggestion li
+            {
+                padding: 7px 1px 2px 6px;
+            }
+
+            #Suggestion li:hover
+            {
+                background-color: #b8eac4;
+                border-bottom: 1px solid #d4edda94;
+            }
+
+            #Enquiry li
+            {
+                padding: 7px 1px 2px 6px;
+            }
+
+            #Enquiry li:hover
+            {
+                background-color: #545b62;
+                border-bottom: 1px solid #d4edda94;
+            }
+
         </style>
 
 
@@ -100,81 +203,7 @@
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
 
-                    <li class="dropdown messages-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fas fa-comments" style="font-size: 17px;"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 4 messages</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
-                                        <li><!-- start message -->
-                                            <a href="#">
-                                                <div class="pull-right">
-                                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Support Team
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li><!-- end message -->
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-right">
-                                                    <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    AdminLTE Design Team
-                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-right">
-                                                    <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Developers
-                                                    <small><i class="fa fa-clock-o"></i> Today</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-right">
-                                                    <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Sales Department
-                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-right">
-                                                    <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Reviewers
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                    </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
-                            </li>
-                            <li class="footer"><a href="#">See All Messages</a></li>
-                        </ul>
-                    </li>
+                    @include('AdminDashBord.layouts.contacts')
 
                     <li>
                         <a href="{{url('/language')}}">
@@ -218,42 +247,44 @@
         </nav>
     </header>
 
+        <div class="curtain">
     <!-- =============================================== -->
 
     <!-- Left side column. contains the sidebar -->
-    <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-            <!-- Sidebar user panel -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
 
-            <br>
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="{{asset('Adminlte_ltr/img/user1-128x128.jpg')}}" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-{{--                    <p>{{auth()->user()->name}}</p>--}}
-                    <p>sasa</p>
-                    <a href="#"><i class="fa fa-circle text-success"></i> {{__('sofra.online')}}</a>
-                </div>
+                    <br>
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="{{asset('Adminlte_ltr/img/user1-128x128.jpg')}}" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+        {{--                    <p>{{auth()->user()->name}}</p>--}}
+                            <p>sasa</p>
+                            <a href="#"><i class="fa fa-circle text-success"></i> {{__('sofra.online')}}</a>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    @include('AdminDashBord.layouts.treeview')
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                @include('AdminDashBord.layouts.errorMassage')
+                @yield('content')
             </div>
-            <br>
-            <!-- sidebar menu: : style can be found in sidebar.less -->
-            @include('AdminDashBord.layouts.treeview')
-        </section>
-        <!-- /.sidebar -->
-    </aside>
+            <!-- /.content-wrapper -->
 
-    <!-- =============================================== -->
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        @include('AdminDashBord.layouts.errorMassage')
-        @yield('content')
-    </div>
-    <!-- /.content-wrapper -->
-
-    <div class="control-sidebar-bg"></div>
+            <div class="control-sidebar-bg"></div>
+        </div>
 </div>
 <!-- ./wrapper -->
   {{--********************************************( Admin lte LTR )**************************************--}}
@@ -280,7 +311,7 @@
 </script>
 <script>
     $(function () {
-        $('#example1').DataTable()
+        $('#example1').DataTable();
         $('#example2').DataTable({
             'paging'      : true,
             'lengthChange': false,
@@ -290,6 +321,51 @@
             'autoWidth'   : false
         })
     })
+</script>
+<script>
+    $(document).ready(function () {
+        $('#Complaint').show();
+        $('#Complaint_button').css('color' , '#721c24');
+        $('#Complaint_button').css('background-color' , '#f8d7da');
+        $('#Suggestion_button').css('color' , '#155724');
+        $('#Suggestion_button').css('background-color' , '#d4edda');
+        $('#Suggestion').hide();
+        $('#Enquiry').hide();
+        $('#contact_menu').hide();
+
+    });
+
+    $('#contact_drop_menu').click(function () {
+
+        $('#contact_menu').toggle();
+        $('.curtain').show();
+    });
+
+    $('.curtain').click(function () {
+
+        $('#contact_menu').hide();
+    });
+
+    $('#Complaint_button').click(function () {
+        $('#Complaint').show();
+        $('#Suggestion').hide();
+        $('#Enquiry').hide();
+        $('#contact_menu').show();
+    });
+
+    $('#Suggestion_button').click(function () {
+        $('#Complaint').hide();
+        $('#Suggestion').show();
+        $('#Enquiry').hide();
+        $('#contact_menu').show();
+    });
+
+    $('#Enquiry_button').click(function () {
+        $('#Complaint').hide();
+        $('#Suggestion').hide();
+        $('#Enquiry').show();
+        $('#contact_menu').show();
+    });
 </script>
 {{--***************************************************************************--}}
 @stack('script')

@@ -36,7 +36,7 @@ class contactsController extends Controller
                 'email' => 'required',
                 'phone' => 'required',
                 'sms_body' => 'required',
-                'type' => 'required|in:complaint,suggestion,enquiry',
+                'type' => 'required|in:Complaint,Suggestion,Enquiry',
             ]);
 
         if ($validator->fails()) {
@@ -70,7 +70,7 @@ class contactsController extends Controller
                 'email' => 'required',
                 'phone' => 'required',
                 'sms_body' => 'required',
-                'type' => 'required|in:complaint,suggestion,enquiry',
+                'type' => 'required|in:Complaint,Suggestion,Enquiry',
             ]);
 
         if ($validator->fails()) {

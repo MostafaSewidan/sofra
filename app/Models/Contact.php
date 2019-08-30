@@ -26,4 +26,5 @@ class Contact extends Model
         return $this->morphTo();
     }
 
+
 }

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\AdminControllers;
 
-use App\Models\Contact;
+use App\Models\App_setting;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ContactController extends Controller
+class AppSettingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('AdminDashBord.contacts.index');
+        $app_settings = App_setting::first();
+        return view('AdminDashBord.appSettings.index' , compact('app_settings'));
     }
 
     /**
@@ -47,17 +48,7 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-        $contact  = Contact::find($id);
-
-        if($contact)
-        {
-            $contact->update(['is_read'=>'true']);
-            return view('AdminDashBord.contacts.show' , compact('contact'));
-        }else{
-
-            session()->flash('fail' , __('sofra.contact_not_found'));
-            return redirect('/contacts');
-        }
+        //
     }
 
     /**
@@ -80,7 +71,33 @@ class ContactController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = validator()->make($request->all(),
+            [
+                'about_app'=>'required',
+                'commission_sms'=>'required',
+                'alahle_account'=>'required',
+                'alraghe_account'=>'required',
+            ]);
+
+        if($data->fails())
+        {
+            return redirect('/app-settings')->withInput()->withErrors($data->errors());
+        }
+
+         $app_setting = App_setting::find($id);
+
+         if($app_setting)
+         {
+             $app_setting->update($request->all());
+
+             session()->flash('success' , __('sofra.update_success'));
+             return redirect('/app-settings');
+         }else{
+
+             session()->flash('fail' , __('sofra.update_fail'));
+             return redirect('/app-settings');
+         }
+
     }
 
     /**
@@ -91,20 +108,6 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-
-
-        $contact = Contact::find($id);
-
-        if($contact)
-        {
-            $contact->delete();
-
-            session()->flash('success' , __('sofra.Delete_success'));
-            return redirect('/contacts');
-        }else
-        {
-            session()->flash('fail' , __('sofra.Delete_fail'));
-            return redirect('/contacts');
-        }
+        //
     }
 }

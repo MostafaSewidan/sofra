@@ -29,6 +29,7 @@ return
         'adding_success' => 'adding Done success',
         'Delete_success' => 'Delete Done success',
         'update_success' => 'update Done success',
+        'update_fail' => 'update Done fail',
         'Delete_fail' => 'Delete Failed',
         'confirm_delete' => 'Please confirm delete it will delete all districts in this city and make some large problems',
         'city_edit' => 'Edit City',
@@ -63,5 +64,13 @@ return
         'offer_table' => 'Offers Table',
         'confirm_delete_offer' => 'Please confirm delete it will make some large problems',
         'offer_edit' => 'Edit Offer',
+        'app_setting_form' => 'App Setting Form',
+        'app_settings' => 'App Setting',
+        'save' => 'Save',
+        'See_All_Messages' => 'See All Messages',
+        'no_messages' => 'No Messages',
+        'block' => ' Block',
+        'activate' => ' Activate',
+        'activation' => ' Activation',
 
     ];

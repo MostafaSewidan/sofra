@@ -11,7 +11,8 @@ class CreateAppSettingsTable extends Migration {
 			$table->increments('id');
 			$table->text('about_app');
 			$table->text('commission_sms');
-			$table->text('bank_accounts');
+			$table->text('alahle_account');
+			$table->text('alraghe_account');
 			$table->timestamps();
 		});
 	}
