@@ -52,7 +52,7 @@ class Resturant extends Model
         return $this->belongsToMany('App\Models\Client')->withPivot('comment','rate');
     }
 
-    public function commission()
+    public function commissions()
     {
         return $this->belongsTo(Commission::class);
     }

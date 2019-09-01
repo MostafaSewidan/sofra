@@ -72,5 +72,6 @@ return
         'block' => ' Block',
         'activate' => ' Activate',
         'activation' => ' Activation',
+        'restaurant_not_found' => ' restaurant_not_found',
 
     ];

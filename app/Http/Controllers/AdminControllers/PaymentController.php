@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\AdminControllers;
 
+use App\Models\Commission;
+use App\Models\Payment;
+use App\Models\Resturant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +17,7 @@ class PaymentController extends Controller
      */
     public function index()
     {
-        return view('AdminDashBord.cities.index');
+        return view('AdminDashBord.payments.index');
     }
 
     /**
@@ -35,15 +38,47 @@ class PaymentController extends Controller
      */
     public function store(Request $request)
     {
-        $data = validator()->make($request->all(),['name'=>'required' ]);
+        $data = validator()->make($request->all(),
+            [
+                'payment'=>'required|numeric',
+                'restaurant_id'=>'required',
+            ]);
         if($data->fails())
         {
-            return redirect('/cities')->withInput()->withErrors($data->errors());
+            return redirect('/payments')->withInput()->withErrors($data->errors());
         }
 
-        City::create(request()->all());
+        $restaurant  = Resturant::find($request->restaurant_id);
+
+        if($restaurant)
+        {
+            $commission = Commission::where('resturant_id' , $restaurant->id)->first()->remain_amount;
+
+            if( $commission == 0 )
+            {
+                session()->flash('fail' , __('sofra.zero_payment_error  '));
+                return redirect('/payments');
+
+            }elseif( $commission < $request->payment )
+            {
+                session()->flash('fail' , __('sofra.<_payment_error  '));
+                return redirect('/payments');
+            }
+
+            $restaurant->payments()->create(
+                [
+                    'payment' => $request->payment,
+                    'remain_amount' => $commission - $request->payment
+                ]);
+
+            Commission::where('resturant_id' , $restaurant->id)->update(['remain_amount' => $commission - $request->payment]);
+        }else{
+
+            session()->flash('fail' , __('sofra.restaurant_not_found'));
+            return redirect('/payments');
+        }
         session()->flash('success' , __('sofra.adding_success'));
-        return redirect('/cities');
+        return redirect('/payments');
     }
 
     /**
@@ -54,9 +89,7 @@ class PaymentController extends Controller
      */
     public function show($id)
     {
-        $districts =  City::find($id)->districts()->get();
-
-        return view('AdminDashBord.districts.index' , compact('districts'));
+        //
 
     }
 
@@ -68,16 +101,16 @@ class PaymentController extends Controller
      */
     public function edit($id)
     {
-        $city = City::find($id);
+        $payment = Payment::find($id);
 
-        if($city)
+        if($payment)
         {
 
-            return view('AdminDashBord.cities.edit', compact('city'));
+            return view('AdminDashBord.payments.edit', compact('payment'));
         }else{
 
-            session()->flash('fail' , __('sofra.city_not_found'));
-            return redirect('/cities');
+            session()->flash('fail' , __('sofra.payment_not_found'));
+            return redirect('/payments');
         }
     }
 
@@ -90,17 +123,60 @@ class PaymentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = validator()->make($request->all(),['name'=>'required' ]);
+        $data = validator()->make($request->all(),['payment'=>'required' ]);
 
         if($data->fails())
         {
-            return redirect('/cities/'.$id.'/edit')->withInput()->withErrors($data->errors());
+            return redirect('/payments/'.$id.'/edit')->withInput()->withErrors($data->errors());
         }
 
-        City::find($id)->update(['name' => $request->name]);
+        $payment = Payment::find($id);
+
+        if($payment)
+        {
+            $commission = Commission::where('resturant_id' , $payment->resturant_id)->first()->remain_amount;
+
+            if($payment->payment < $request->payment)
+            {
+               $payment2 =  $request->payment - $payment->payment;
+
+                Commission::where('resturant_id' , $payment->resturant_id)->update(['remain_amount' => $commission - $request->payment]);
+                $payment->update(
+                    [
+                        'payment' => $request->payment,
+                        'remain_amount' => $commission - $request->payment
+                    ]);
+
+            }elseif($payment->payment > $request->payment)
+            {
+
+            }
+
+            if( $commission == 0 )
+            {
+                session()->flash('fail' , __('sofra.zero_payment_error  '));
+                return redirect('/payments');
+
+            }elseif( $commission < $request->payment )
+            {
+                session()->flash('fail' , __('sofra.<_payment_error  '));
+                return redirect('/payments');
+            }
+
+            $payment->update(
+                [
+                    'payment' => $request->payment,
+                    'remain_amount' => $commission - $request->payment
+                ]);
+        }
+
+
+
+
+
 
         session()->flash('success' , __('sofra.update_success'));
-        return redirect('/cities');
+        return redirect('/payments');
     }
 
     /**
@@ -113,19 +189,18 @@ class PaymentController extends Controller
     {
 
 
-        $city = City::find($id);
+        $payment = Payment::find($id);
 
-        if($city)
+        if($payment)
         {
-            $city->districts()->delete();
-            $city->delete();
+            $payment->delete();
 
             session()->flash('success' , __('sofra.Delete_success'));
-            return redirect('/cities');
+            return redirect('/payments');
         }else
         {
             session()->flash('fail' , __('sofra.Delete_fail'));
-            return redirect('/cities');
+            return redirect('/payments');
         }
     }
 }

@@ -72,12 +72,12 @@
     @CheckLang
     <section class="content-header">
         <h1>
-            <small>{{__('sofra.city_edit')}}</small>
+            <small>{{__('sofra.payment_edit')}}</small>
             {{__('sofra.edit')}}
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{url('/cities/edit')}}">{{__('sofra.edit')}}</a></li>
-            <li><a href="{{url('/cities')}}">{{__('sofra.city')}}</a></li>
+            <li><a href="{{url('/payments/edit')}}">{{__('sofra.edit')}}</a></li>
+            <li><a href="{{url('/payments')}}">{{__('sofra.payment')}}</a></li>
             <li><a href="{{url('/')}}"> {{__('sofra.home')}} <i class="fa fa-tachometer-alt"></i></a></li>
 
         </ol>
@@ -87,13 +87,13 @@
     @else
         <section class="content-header">
             <h1>
-                {{__('sofra.City')}}
-                <small>{{__('sofra.city_page')}}</small>
+                {{__('sofra.Payment')}}
+                <small>{{__('sofra.payment_page')}}</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="{{url('/')}}"><i class="fa fa-tachometer-alt"></i> {{__('sofra.home')}}</a></li>
-                <li><a href="{{url('/cities')}}">{{__('sofra.city')}}</a></li>
-                <li><a href="{{url('/cities/edit')}}">{{__('sofra.edit')}}</a></li>
+                <li><a href="{{url('/payments')}}">{{__('sofra.payment')}}</a></li>
+                <li><a href="{{url('/payments/edit')}}">{{__('sofra.edit')}}</a></li>
             </ol>
         </section>
 
@@ -122,11 +122,11 @@
 
                 {!! Form::open(
                                                                     [
-                                                                         'url' =>'cities/'.$city->id,
+                                                                         'url' =>'payments/'.$payment->id,
                                                                         'method'=>'PUT'
                                                                     ])
                                                                  !!}
-                {!! Form::text('name' ,$city->name ,['class'=>"form-control"]) !!}
+                {!! Form::text('payment' ,$payment->payment ,['class'=>"form-control"]) !!}
                 <br>
 
                 @CheckLang

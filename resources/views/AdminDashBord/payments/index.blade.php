@@ -1,7 +1,12 @@
 {{--***********************************************************************--}}
 
 @extends('AdminDashBord.layouts.app')
-<?php $payments = \App\Models\Payment::all(); ?>
+<?php
+
+    $payments = \App\Models\Payment::all();
+    $restaurants = \App\Models\Resturant::all();
+
+    ?>
 
 {{--**********************************************************************--}}
 
@@ -128,6 +133,7 @@
                         @CheckLang
                             <tr>
                                 <th>{{__('sofra.delete')}}</th>
+                                <th>{{__('sofra.edit')}}</th>
                                 <th>{{__('sofra.created_at')}}</th>
                                 <th>{{__('sofra.remain_amount')}}</th>
                                 <th>{{__('sofra.amount_paid')}}</th>
@@ -141,6 +147,7 @@
                                 <th>{{__('sofra.amount_paid')}}</th>
                                 <th>{{__('sofra.remain_amount')}}</th>
                                 <th>{{__('sofra.created_at')}}</th>
+                                <th>{{__('sofra.edit')}}</th>
                                 <th>{{__('sofra.delete')}}</th>
                             </tr>
                         @endCheckLang
@@ -175,10 +182,16 @@
 
                                 </td>
 
+                                <td style=" text-align: center">
+                                    <a href="{{url('/payments/'.$payment->id.'/edit')}}">
+                                        <i class="fas fa-pen-square" style="color: #51a112;    font-size: 25px;"></i>
+                                    </a>
+                                </td>
+
                                 <td>{{optional($payment)->created_at}}</td>
                                 <td>{{optional($payment)->remain_amount}}</td>
                                 <td>{{optional($payment)->payment}}</td>
-                                <td>{{optional($payment)->resturant()->name}}</td>
+                                <td>{{optional($payment)->resturant->name}}</td>
                                 <td>{{optional($payment)->id}}</td>
 
 
@@ -187,10 +200,16 @@
                         @else
                             <tr>
                                 <td>{{optional($payment)->id}}</td>
-                                <td>{{optional($payment)->resturant()->name}}</td>
+                                <td>{{optional($payment)->resturant->name}}</td>
                                 <td>{{optional($payment)->payment}}</td>
                                 <td>{{optional($payment)->remain_amount}}</td>
                                 <td>{{optional($payment)->created_at}}</td>
+
+                                <td style=" text-align: center">
+                                    <a href="{{url('/payments/'.$payment->id.'/edit')}}">
+                                        <i class="fas fa-pen-square" style="color: #51a112;    font-size: 25px;"></i>
+                                    </a>
+                                </td>
 
                                 <td style=" text-align: center">
                                     {!! Form::open(
@@ -225,6 +244,7 @@
                         @CheckLang
                             <tr>
                                 <th>{{__('sofra.delete')}}</th>
+                                <th>{{__('sofra.edit')}}</th>
                                 <th>{{__('sofra.created_at')}}</th>
                                 <th>{{__('sofra.remain_amount')}}</th>
                                 <th>{{__('sofra.amount_paid')}}</th>
@@ -238,6 +258,7 @@
                                 <th>{{__('sofra.amount_paid')}}</th>
                                 <th>{{__('sofra.remain_amount')}}</th>
                                 <th>{{__('sofra.created_at')}}</th>
+                                <th>{{__('sofra.edit')}}</th>
                                 <th>{{__('sofra.delete')}}</th>
                             </tr>
                         @endCheckLang
