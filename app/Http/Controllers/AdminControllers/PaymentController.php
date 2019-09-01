@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers\AdminControllers;
 
-use App\Models\Client;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\File;
 
-class ClientController extends Controller
+class PaymentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +14,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return view('AdminDashBord.clients.index');
+        return view('AdminDashBord.cities.index');
     }
 
     /**
@@ -40,12 +38,12 @@ class ClientController extends Controller
         $data = validator()->make($request->all(),['name'=>'required' ]);
         if($data->fails())
         {
-            return redirect('/clients')->withInput()->withErrors($data->errors());
+            return redirect('/cities')->withInput()->withErrors($data->errors());
         }
 
         City::create(request()->all());
         session()->flash('success' , __('sofra.adding_success'));
-        return redirect('/clients');
+        return redirect('/cities');
     }
 
     /**
@@ -56,9 +54,9 @@ class ClientController extends Controller
      */
     public function show($id)
     {
-        $client =  Client::find($id);
+        $districts =  City::find($id)->districts()->get();
 
-        return view('AdminDashBord.clients.show' , compact('client'));
+        return view('AdminDashBord.districts.index' , compact('districts'));
 
     }
 
@@ -70,7 +68,17 @@ class ClientController extends Controller
      */
     public function edit($id)
     {
-        //
+        $city = City::find($id);
+
+        if($city)
+        {
+
+            return view('AdminDashBord.cities.edit', compact('city'));
+        }else{
+
+            session()->flash('fail' , __('sofra.city_not_found'));
+            return redirect('/cities');
+        }
     }
 
     /**
@@ -82,27 +90,17 @@ class ClientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $client= Client::find($id);
+        $data = validator()->make($request->all(),['name'=>'required' ]);
 
-        if($client)
+        if($data->fails())
         {
-            if($client->activation_report == 'active')
-            {
-                $client->update(['activation_report'=> 'not_active']);
-
-            }
-            elseif ($client->activation_report == 'not_active')
-            {
-                $client->update(['activation_report'=> 'active']);
-            }
-
-            session()->flash('success' , __('sofra.update_success'));
-            return back();
-        }else{
-
-            session()->flash('fail' , __('sofra.update_fail'));
-            return back();
+            return redirect('/cities/'.$id.'/edit')->withInput()->withErrors($data->errors());
         }
+
+        City::find($id)->update(['name' => $request->name]);
+
+        session()->flash('success' , __('sofra.update_success'));
+        return redirect('/cities');
     }
 
     /**
@@ -115,22 +113,19 @@ class ClientController extends Controller
     {
 
 
-        $client= Client::find($id);
+        $city = City::find($id);
 
-        if($client)
+        if($city)
         {
-            $name = public_path($client->image->name);
-            File::delete($name);
-            $client->image->delete();
-
-            $client->delete();
+            $city->districts()->delete();
+            $city->delete();
 
             session()->flash('success' , __('sofra.Delete_success'));
-            return redirect('/clients');
+            return redirect('/cities');
         }else
         {
             session()->flash('fail' , __('sofra.Delete_fail'));
-            return redirect('/clients');
+            return redirect('/cities');
         }
     }
 }

@@ -407,6 +407,9 @@ class RestaurantOrderCycleController extends Controller
 
                 $order->update(['state' => 'delivered']);
 
+                $commission = $restaurent->commission;
+                $commission->update(['remain_amount' => ( $order->price / 10 ) + $commission->remain_amount ]);
+
                 $client = Client::find($order->client_id);
 
                 //check if teh client is existing

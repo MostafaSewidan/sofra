@@ -77,6 +77,11 @@ class Resturant extends Model
         return $this->hasMany(Client_resturant::class);
     }
 
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
+    }
+
 //    public function city()
 //    {
 //        return $this->hasManyThrough(City::class,District::class );

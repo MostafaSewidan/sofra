@@ -16,7 +16,7 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">{{__('sofra.client_details')}}</h3>
+                <h3 class="box-title">{{__('sofra.order_details')}}</h3>
 
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -32,13 +32,13 @@
 
                 <div class="box box-primary">
                     <br>
-                    <center>
-                        <img src="{{asset(optional($client)->image->first()->name)}}" style ="
-    /* height: 19pc; */
-    border-radius: 169px;
-    box-shadow: 9px 8px 33px -14px #00000096;
-    border: 9px solid white;">
-                    </center>
+{{--                    <center>--}}
+{{--                        <img src="{{asset(optional($order)->image->first()->name)}}" style ="--}}
+{{--    /* height: 19pc; */--}}
+{{--    border-radius: 169px;--}}
+{{--    box-shadow: 9px 8px 33px -14px #00000096;--}}
+{{--    border: 9px solid white;">--}}
+{{--                    </center>--}}
                     <br>
                     @CheckLang
                         <div class="box-header with-border" style="    color: #004085;
@@ -46,21 +46,21 @@
         border-color: #b8daff;
             padding-left: 2pc;
     ">
-                            <h3 class="box-title">  {{optional($client)->name}} : {{__('sofra.name')}}</h3>
+                            <h3 class="box-title">  {{optional($order)->client()->first()->name}} : {{__('sofra.client_name')}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="    color: #155724;
         background-color: #d4edda;
             padding-left: 2pc;
         border-color: #c3e6cb;">
-                            <h3 class="box-title">  {{optional($client)->email}} : {{__('sofra.email')}}</h3>
+                            <h3 class="box-title">  {{optional($order)->resturant()->first()->name}} : {{__('sofra.restaurant_name')}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="color: #856404;
         background-color: #fff3cd;
             padding-left: 2pc;
         border-color: #ffeeba;">
-                            <h3 class="box-title"> {{optional($client)->phone}} : {{__('sofra.phone')}}</h3>
+                            <h3 class="box-title"> {{optional($order)->price}} : {{__('sofra.price')}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="
@@ -71,7 +71,7 @@
         background-color: #d4edda;
             padding-left: 2pc;
         border-color: #c3e6cb;">
-                            <h3 class="box-title"> {{optional($client)->district()->first()->name}} : {{__('sofra.district')}}</h3>
+                            <h3 class="box-title"> {{optional($order)->detalis}} : {{__('sofra.details')}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="    color: #004085;
@@ -79,7 +79,14 @@
         border-color: #b8daff;
             padding-left: 2pc;
     ">
-                            <h3 class="box-title"> {{optional($client)->created_at}} : {{__('sofra.created_at')}}</h3>
+                            <h3 class="box-title"> {{optional($order)->created_at}} : {{__('sofra.created_at')}}</h3>
+                        </div>
+
+                        <div class="box-header with-border" style="color: #856404;
+            background-color: #fff3cd;
+                padding-left: 2pc;
+            border-color: #ffeeba;">
+                            <h3 class="box-title"> {{optional($order)->address}} : {{__('sofra.address')}}</h3>
                         </div>
 
 
@@ -90,21 +97,21 @@
         border-color: #b8daff;
             padding-left: 2pc;
     ">
-                            <h3 class="box-title">{{__('sofra.name')}} : {{optional($client)->name}}</h3>
+                            <h3 class="box-title">{{__('sofra.client_name')}} : {{optional($order)->client()->first()->name}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="    color: #155724;
         background-color: #d4edda;
             padding-left: 2pc;
         border-color: #c3e6cb;">
-                            <h3 class="box-title">{{__('sofra.email')}} : {{optional($client)->email}}</h3>
+                            <h3 class="box-title">{{__('sofra.restaurant_name')}} : {{optional($order)->resturant()->first()->name}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="color: #856404;
         background-color: #fff3cd;
             padding-left: 2pc;
         border-color: #ffeeba;">
-                            <h3 class="box-title">{{__('sofra.phone')}} : {{optional($client)->phone}}</h3>
+                            <h3 class="box-title">{{__('sofra.price')}} : {{optional($order)->price}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="
@@ -115,7 +122,7 @@
         background-color: #d4edda;
             padding-left: 2pc;
         border-color: #c3e6cb;">
-                            <h3 class="box-title">{{__('sofra.district')}} : {{optional($client)->district()->first()->name}}</h3>
+                            <h3 class="box-title">{{__('sofra.details')}} : {{optional($order)->detalis}}</h3>
                         </div>
 
                         <div class="box-header with-border" style="    color: #004085;
@@ -123,9 +130,15 @@
         border-color: #b8daff;
             padding-left: 2pc;
     ">
-                            <h3 class="box-title">{{__('sofra.created_at')}} : {{optional($client)->created_at}}</h3>
+                            <h3 class="box-title">{{__('sofra.created_at')}} : {{optional($order)->created_at}}</h3>
                         </div>
 
+                        <div class="box-header with-border" style="color: #856404;
+            background-color: #fff3cd;
+                padding-left: 2pc;
+            border-color: #ffeeba;">
+                            <h3 class="box-title"> {{optional($order)->address}} : {{__('sofra.address')}}</h3>
+                        </div>
 
 
                     @endCheckLang
@@ -136,7 +149,7 @@
 
                             {!! Form::open(
                                                                       [
-                                                                           'url' =>'clients/'.$client->id,
+                                                                           'url' =>'orders/'.$order->id,
                                                                           'method'=>'DELETE'
                                                                       ])
                                                                    !!}
@@ -151,30 +164,7 @@
                             {!! Form::close() !!}
 
                         </div>
-                        <div class="col-lg-2">
-                            {!! Form::open(
-                                                  [
-                                                      'url' => '/clients/'.$client->id,
-                                                      'method'=>'PUT'
-                                                  ]
-                                          ) !!}
-                            @if($client->activation_report == 'active')
 
-
-                                <button type="submit" class="btn btn-danger" style="    font-size: 16px;
-        font-weight: 900; width: 100px">
-                                    <i class="fas fa-ban"></i>
-                                    {{__('sofra.block')}}
-                                </button>
-                            @else
-                                <button type="submit" class="btn btn-success" style="    font-size: 16px;
-        font-weight: 900;">
-                                    <i class="fas fa-key"></i>
-                                    {{__('sofra.activate')}}
-                                </button>
-                            @endif
-                            {!! Form::close() !!}
-                        </div>
                     </div>
                     <!-- /.box-body -->
                 </div>

@@ -459,6 +459,8 @@ class ClientOrderCycleController extends Controller
                 //check if teh restaurant is existing
                 if($restaurant)
                 {
+                    $commission = $restaurant->commission;
+                    $commission->update(['remain_amount' => ( $order->price / 10 ) + $commission->remain_amount ]);
                     $notification = $restaurant->notifications()->create(        // create notification for client
                         [
                             'order_id' => $order->id,

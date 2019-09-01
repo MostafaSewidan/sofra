@@ -16,7 +16,7 @@ class CreateClientsTable extends Migration {
 			$table->string('password');
 			$table->string('api_token')->nullable();
 			$table->string('pin_code')->nullable();
-			$table->char('activation_report')->default('true');
+			$table->char('activation_report')->default('active');
 			$table->timestamps();
 		});
 	}
