@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/hash' , function(){return \Illuminate\Support\Facades\Hash::make('11111111');});
+
 Route::group(['middleware' =>'auth'] , function (){
     Route::group(['middleware'=>'language'],function (){
 
@@ -88,6 +91,12 @@ Route::group(['middleware' =>'auth'] , function (){
             /******************************(( payments Module))************************/
 
             Route::resource('/payments' , 'PaymentController');
+
+            /************************************************************************/
+
+            /******************************(( Restaurants Module))************************/
+
+            Route::resource('/restaurants' , 'RestaurantController');
 
             /************************************************************************/
 

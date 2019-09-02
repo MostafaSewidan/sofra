@@ -214,16 +214,16 @@
                     <li class="dropdown user user-menu">
 
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-{{--                            <img src="{{asset('Adminlte_ltr/img/'.Auth()->user()->img)}}" class="user-image" alt="User Image">--}}
-                            <span class="hidden-xs">Mostafa</span>
+                            <img src="{{asset(Auth()->user()->img)}}" class="user-image" alt="User Image">
+                            <span class="hidden-xs">{{Auth()->user()->name}}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-{{--                                <img src="{{asset('Adminlte_ltr/img/'.Auth()->user()->img)}}" class="img-circle" alt="User Image">--}}
+                                <img src="{{asset(Auth()->user()->img)}}" class="img-circle" alt="User Image">
 
                                 <p>
-{{--                                    {{auth()->user()->name}}--}}
+                                    {{auth()->user()->name}}
                                     <small>Member since Nov. 2012</small>
                                 </p>
                             </li>
@@ -259,11 +259,11 @@
                     <br>
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="{{asset('Adminlte_ltr/img/user1-128x128.jpg')}}" class="img-circle" alt="User Image">
+                            <img src="{{Auth()->user()->img}}" class="img-circle" alt="User Image">
                         </div>
                         <div class="pull-left info">
         {{--                    <p>{{auth()->user()->name}}</p>--}}
-                            <p>sasa</p>
+                            <p>{{Auth()->user()->name}}</p>
                             <a href="#"><i class="fa fa-circle text-success"></i> {{__('sofra.online')}}</a>
                         </div>
                     </div>

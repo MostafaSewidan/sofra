@@ -29,7 +29,7 @@ return
         'adding_success' => 'adding Done success',
         'Delete_success' => 'Delete Done success',
         'update_success' => 'update Done success',
-        'update_fail' => 'update Done fail',
+        'update_fail' => 'update Failed',
         'Delete_fail' => 'Delete Failed',
         'confirm_delete' => 'Please confirm delete it will delete all districts in this city and make some large problems',
         'city_edit' => 'Edit City',
@@ -73,5 +73,9 @@ return
         'activate' => ' Activate',
         'activation' => ' Activation',
         'restaurant_not_found' => ' restaurant_not_found',
+        'payment_activate' => 'Payment activate',
+        'report_activate' => 'Report activate',
+        'payment_block' => ' Payment block',
+        'report_block' => ' Report block',
 
     ];
