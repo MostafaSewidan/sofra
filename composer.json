@@ -13,7 +13,8 @@
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8",
-        "rackspace/php-opencloud": "dev-master"
+        "rackspace/php-opencloud": "dev-master",
+        "zizaco/entrust": "~1.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
