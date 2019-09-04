@@ -1,5 +1,5 @@
 @extends('AdminDashBord.layouts.app')
-@inject('perm',App\Models\Permission)
+@inject('roles',App\Models\Role)
 {{--**********************************************************************--}}
 
 @section('style')
@@ -72,12 +72,12 @@
     @CheckLang
     <section class="content-header">
         <h1>
-            <small>{{__('sofra.role_edit')}}</small>
+            <small>{{__('sofra.user_edit')}}</small>
             {{__('sofra.edit')}}
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{url('/roles/edit')}}">{{__('sofra.edit')}}</a></li>
-            <li><a href="{{url('/roles')}}">{{__('sofra.role')}}</a></li>
+            <li><a href="{{url('/users/edit')}}">{{__('sofra.edit')}}</a></li>
+            <li><a href="{{url('/users')}}">{{__('sofra.user')}}</a></li>
             <li><a href="{{url('/')}}"> {{__('sofra.home')}} <i class="fa fa-tachometer-alt"></i></a></li>
 
         </ol>
@@ -87,13 +87,13 @@
     @else
         <section class="content-header">
             <h1>
-                {{__('sofra.City')}}
-                <small>{{__('sofra.role_page')}}</small>
+                {{__('sofra.User')}}
+                <small>{{__('sofra.user_page')}}</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="{{url('/')}}"><i class="fa fa-tachometer-alt"></i> {{__('sofra.home')}}</a></li>
-                <li><a href="{{url('/roles')}}">{{__('sofra.role')}}</a></li>
-                <li><a href="{{url('/roles/edit')}}">{{__('sofra.edit')}}</a></li>
+                <li><a href="{{url('/users')}}">{{__('sofra.user')}}</a></li>
+                <li><a href="{{url('/users/edit')}}">{{__('sofra.edit')}}</a></li>
             </ol>
         </section>
 
@@ -107,7 +107,7 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">{{__('sofra.edit_role')}}</h3>
+                <h3 class="box-title">{{__('sofra.edit_user')}}</h3>
 
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -122,93 +122,58 @@
 
                 <br>
 
-                @CheckLang
-                {!! Form::open(
-                                                                                       [
-                                                                                            'url' =>'roles/'.$role->id,
-                                                                                           'method'=>'PUT'
-                                                                                       ])
-                                                                                    !!}
-
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.name')}}</label>
-                    {!! Form::text('name' , $role->name ,['class'=>"form-control"]) !!}
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.display_name')}}</label>
-                    {!! Form::text('display_name' , $role->display_name ,['class'=>"form-control"]) !!}
-                </div>
-
-                <div class="form-group">
-
-                    <label for="exampleInputEmail1">{{__('sofra.description')}}</label>
-                    <textarea name ='description' class="form-control" rows="3" style="text-align: right">{{$role->description}}</textarea>
-
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.permissions')}}</label>
-                    <br><br>
-                    @foreach( $perm->all() as $permission)
-
-                        <label class="col-lg-3">
-                            <input
-                                    type="checkbox"
-                                    name="permission_list[]"
-                                    value="{{$permission->id}}"
-                                    @if($role->hasPermission($permission->name))
-                                        checked
-                                    @endif
-                            >
-                            {{$permission->display_name}}
-                        </label>
-
-                    @endforeach
-
-                </div>
-
-                <br><br>
-                <button type = 'submit' class="btn btn-primary">
-                    <i class="fas fa-plus"></i>
-                    {{__('sofra.edit')}}
-                </button>
-                {!! Form::close() !!}
-
-                @else
-
                     {!! Form::open(
                                                                         [
-                                                                             'url' =>'roles/'.$role->id,
-                                                                            'method'=>'PUT'
+                                                                             'url' =>'users/'.$user->id,
+                                                                            'method'=>'PUT',
+                                                                            'files'=> 'true'
                                                                         ])
                                                                      !!}
 
+
                     <div class="form-group">
                         <label for="exampleInputEmail1">{{__('sofra.name')}}</label>
-                        {!! Form::text('name' , $role->name ,['class'=>"form-control"]) !!}
+                        {!! Form::text('name' , $user->name ,['class'=>"form-control"]) !!}
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">{{__('sofra.display_name')}}</label>
-                        {!! Form::text('display_name' , $role->display_name ,['class'=>"form-control"]) !!}
+                        <label for="exampleInputEmail1">{{__('sofra.email')}}</label>
+                        {!! Form::text('email' , $user->email ,['class'=>"form-control"]) !!}
                     </div>
 
                     <div class="form-group">
+                        <label for="exampleInputEmail1">{{__('sofra.password')}}</label>
+                        {!! Form::password('password' , ['class'=>"form-control"]) !!}
+                    </div>
 
-                        <label for="exampleInputEmail1">{{__('sofra.description')}}</label>
-                        <textarea name ='description' class="form-control" rows="3">{{$role->description}}</textarea>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">{{__('sofra.password_confirmation')}}</label>
+                        {!! Form::password('password_confirmation' ,['class'=>"form-control"]) !!}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">{{__('sofra.Image ')}}</label>
+
+
+                        {!! Form::file('img') !!}
 
                     </div>
+
                     <br><br>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">{{__('sofra.permissions')}}</label>
+                        <label for="exampleInputEmail1">{{__('sofra.roles')}}</label>
                         <br><br>
-                        @foreach( $perm->all() as $permission)
+                        @foreach( $roles->all() as $role)
 
                             <label class="col-lg-3">
-                                <input type="checkbox" name="permission_list[]" value="{{$permission->id}}"> {{$permission->display_name}}
+                                <input
+                                        type="checkbox"
+                                        name="roles_list[]"
+                                        value="{{$role->id}}"
+                                        @if($user->hasRole($role->name))
+                                        checked
+                                        @endif
+                                > {{$role->display_name}}
                             </label>
 
                         @endforeach
@@ -222,9 +187,6 @@
                     </button>
                     {!! Form::close() !!}
 
-
-                    @endCheckLang
-                {!! Form::close() !!}
             </div>
             <!-- /.box-body -->
 

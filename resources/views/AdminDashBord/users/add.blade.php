@@ -1,4 +1,4 @@
-@inject('perm',App\Models\Permission)
+@inject('roles',App\Models\Role)
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -6,41 +6,54 @@
     @CheckLang
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3 class="box-title" style="    margin-right: 1pc;">{{__('sofra.add_role')}}</h3>
+            <h3 class="box-title" style="    margin-right: 1pc;">{{__('sofra.add_user')}}</h3>
 
             <div class="box-body">
 
-                {!! Form::model(
+                {!! Form::open(
                                                                     [
-                                                                         'url' =>'/roles',
-                                                                        'method'=>'post'
+                                                                         'url' =>'/users',
+                                                                        'method'=>'post',
+                                                                        'files'=> 'true'
                                                                     ])
                                                                  !!}
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">{{__('sofra.name')}}</label>
-                    {!! Form::text('name' ,old('') ,['class'=>"form-control"]) !!}
+                    {!! Form::text('name' ,old('name') ,['class'=>"form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.display_name')}}</label>
-                    {!! Form::text('display_name' ,old('') ,['class'=>"form-control"]) !!}
+                    <label for="exampleInputEmail1">{{__('sofra.email')}}</label>
+                    {!! Form::text('email' ,old('email') ,['class'=>"form-control"]) !!}
                 </div>
 
                 <div class="form-group">
+                    <label for="exampleInputEmail1">{{__('sofra.password')}}</label>
+                    {!! Form::password('password' , ['class'=>"form-control"]) !!}
+                </div>
 
-                    <label for="exampleInputEmail1">{{__('sofra.description')}}</label>
-                    <textarea name ='description' class="form-control" rows="3" style="text-align: right">{{old('description')}}</textarea>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">{{__('sofra.password_confirmation')}}</label>
+                    {!! Form::password('password_confirmation' ,['class'=>"form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">{{__('sofra.Image ')}}</label>
+
+
+                    {!! Form::file('img') !!}
 
                 </div>
+
                 <br><br>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.permissions')}}</label>
+                    <label for="exampleInputEmail1">{{__('sofra.roles')}}</label>
                     <br><br>
-                    @foreach( $perm->all() as $permission)
+                    @foreach( $roles->all() as $role)
 
                         <label class="col-lg-3">
-                            <input type="checkbox" name="permission_list[]" value="{{$permission->id}}"> {{$permission->display_name}}
+                            <input type="checkbox" name="roles_list[]" value="{{$role->id}}"> {{$role->display_name}}
                         </label>
 
                     @endforeach
@@ -54,9 +67,16 @@
                 </button>
                 {!! Form::close() !!}
 
+
             </div>
         </div>
-    @else
+
+    {{--        *************************************************************--}}
+
+@else
+
+{{--        *************************************************************--}}
+
         <div class="modal-content" style="background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
@@ -65,50 +85,68 @@
     margin-top: -2pc;
     margin-bottom: 3pc;">
             <span class="close">&times;</span>
-            <h3 class="box-title" style="    margin-left: 1pc;">{{__('sofra.Add_role')}}</h3>
+            <h3 class="box-title" style="    margin-left: 1pc;">{{__('sofra.Add_user')}}</h3>
             <br>
 
             <div class="box-body">
-                {!! Form::model(
+
+                {!! Form::open(
                                                                     [
-                                                                         'url' =>'/roles',
-                                                                        'method'=>'post'
+                                                                         'url' =>'/users',
+                                                                        'method'=>'post',
+                                                                        'files'=> true
                                                                     ])
                                                                  !!}
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">{{__('sofra.name')}}</label>
-                    {!! Form::text('name' ,old('') ,['class'=>"form-control"]) !!}
+                    {!! Form::text('name' ,old('name') ,['class'=>"form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.display_name')}}</label>
-                    {!! Form::text('display_name' ,old('') ,['class'=>"form-control"]) !!}
+                    <label for="exampleInputEmail1">{{__('sofra.email')}}</label>
+                    {!! Form::text('email' ,old('email') ,['class'=>"form-control"]) !!}
                 </div>
 
                 <div class="form-group">
+                    <label for="exampleInputEmail1">{{__('sofra.password')}}</label>
+                    {!! Form::password('password' , ['class'=>"form-control"]) !!}
+                </div>
 
-                    <label for="exampleInputEmail1">{{__('sofra.description')}}</label>
-                    <textarea name ='description' class="form-control" rows="3">{{old('description')}}</textarea>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">{{__('sofra.password_confirmation')}}</label>
+                    {!! Form::password('password_confirmation' ,['class'=>"form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">{{__('sofra.Image ')}}</label>
+
+
+                    {!! Form::file('img') !!}
 
                 </div>
+
+                <br><br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">{{__('sofra.roles')}}</label>
                     <br><br>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">{{__('sofra.permissions')}}</label>
-                    <br><br>
-                        @foreach( $perm->all() as $permission)
+                    @foreach( $roles->all() as $role)
 
-                                    <label class="col-lg-3">
-                                        <input type="checkbox" name="permission_list[]" value="{{$permission->id}}"> {{$permission->display_name}}
-                                    </label>
+                        <label class="col-lg-3">
+                            <input type="checkbox" name="roles_list[]" value="{{$role->id}}"> {{$role->display_name}}
+                        </label>
 
-                        @endforeach
+                    @endforeach
 
                 </div>
 
-<br><br>
-                <button type = 'submit' class="btn btn-primary"><i class="fas fa-plus"></i>{{__('sofra.Add')}}</button>
+                <br><br>
+                <button type = 'submit' class="btn btn-primary">
+                    <i class="fas fa-plus"></i>
+                    {{__('sofra.Add')}}
+                </button>
                 {!! Form::close() !!}
+
             </div>
         </div>
     @endCheckLang

@@ -1,9 +1,7 @@
 {{--***********************************************************************--}}
 
 @extends('AdminDashBord.layouts.app')
-@inject('user' , App\Models\Client)
-@inject('restaurant' , App\Models\Resturant)
-<?php $roles = \App\Models\Role::all(); ?>
+<?php $users = \App\User::all(); ?>
 
 {{--**********************************************************************--}}
 
@@ -21,7 +19,7 @@
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ oparole */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opauser */
         }
 
         /* Modal Content */
@@ -77,11 +75,11 @@
     @CheckLang
     <section class="content-header">
         <h1>
-            {{__('sofra.Role')}}
-            <small>{{__('sofra.role_page')}}</small>
+            {{__('sofra.User')}}
+            <small>{{__('sofra.user_page')}}</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{url('/roles')}}">{{__('sofra.role')}}</a></li>
+            <li><a href="{{url('/users')}}">{{__('sofra.user')}}</a></li>
             <li><a href="{{url('/')}}"> {{__('sofra.home')}} <i class="fa fa-tachometer-alt"></i></a></li>
 
         </ol>
@@ -91,12 +89,12 @@
     @else
         <section class="content-header">
             <h1>
-                {{__('sofra.Role')}}
-                <small>{{__('sofra.role_page')}}</small>
+                {{__('sofra.User')}}
+                <small>{{__('sofra.user_page')}}</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="{{url('/')}}"><i class="fa fa-tachometer-alt"></i> {{__('sofra.home')}}</a></li>
-                <li><a href="{{url('/roles')}}">{{__('sofra.role')}}</a></li>
+                <li><a href="{{url('/users')}}">{{__('sofra.user')}}</a></li>
             </ol>
         </section>
 
@@ -107,19 +105,19 @@
 
             @CheckLang
 
-            <button id="myBtn" class="btn btn-primary"> {{__('sofra.ADD_Role')}} <i class="fas fa-plus"></i></button>
+            <button id="myBtn" class="btn btn-primary"> {{__('sofra.ADD_User')}} <i class="fas fa-plus"></i></button>
             <br>
             <br>
 
             @else
-                <button id="myBtn" class="btn btn-primary"><i class="fas fa-plus"></i> {{__('sofra.ADD_Role')}} </button>
+                <button id="myBtn" class="btn btn-primary"><i class="fas fa-plus"></i> {{__('sofra.ADD_User')}} </button>
                 <br>
                 <br>
             @endCheckLang
 
             <div class="box">
             <div class="box-header">
-                <h3 class="box-title">{{__('sofra.roles_table')}}</h3>
+                <h3 class="box-title">{{__('sofra.users_table')}}</h3>
 
             </div>
             <!-- /.box-header -->
@@ -131,7 +129,8 @@
                             <tr>
                                 <th>{{__('sofra.delete')}}</th>
                                 <th>{{__('sofra.edit')}}</th>
-                                <th>{{__('sofra.display_name')}}</th>
+                                <th>{{__('sofra.role')}}</th>
+                                <th>{{__('sofra.email')}}</th>
                                 <th>{{__('sofra.name')}}</th>
                                 <th>{{__('sofra.id')}}</th>
                             </tr>
@@ -139,7 +138,8 @@
                             <tr>
                                 <th>{{__('sofra.id')}}</th>
                                 <th>{{__('sofra.name')}}</th>
-                                <th>{{__('sofra.display_name')}}</th>
+                                <th>{{__('sofra.email')}}</th>
+                                <th>{{__('sofra.role')}}</th>
                                 <th>{{__('sofra.edit')}}</th>
                                 <th>{{__('sofra.delete')}}</th>
                             </tr>
@@ -147,14 +147,14 @@
 
                     </thead>
                     <tbody>
-                    @foreach( $roles as $role)
+                    @foreach( $users as $user)
                         @CheckLang
                             <tr>
 
                                 <td style=" text-align: center">
                                     {!! Form::open(
                                                                     [
-                                                                         'url' =>'roles/'.$role->id,
+                                                                         'url' =>'users/'.$user->id,
                                                                         'method'=>'DELETE'
                                                                     ])
                                                                  !!}
@@ -176,28 +176,49 @@
                                 </td>
 
                                 <td style=" text-align: center">
-                                    <a href="{{url('/roles/'.$role->id.'/edit')}}">
+                                    <a href="{{url('/users/'.$user->id.'/edit')}}">
                                         <i class="fas fa-pen-square" style="color: #51a112;    font-size: 25px;"></i>
                                     </a>
                                 </td>
 
 
-                                <td>{{optional($role)->display_name}}</td>
-                                <td>{{optional($role)->name}}</td>
-                                <td>{{optional($role)->id}}</td>
+                                <td>{{optional($user)->display_name}}</td>
+                                <td>{{optional($user)->name}}</td>
+                                <td>{{optional($user)->id}}</td>
 
 
 
                             </tr>
                         @else
                             <tr>
-                                <td>{{optional($role)->id}}</td>
-                                <td>{{optional($role)->name}}</td>
-                                <td>{{optional($role)->display_name}}</td>
+                                <td>{{optional($user)->id}}</td>
+                                <td>{{optional($user)->name}}</td>
+                                <td>{{optional($user)->email}}</td>
+                                <td>
+                                    <?php
+
+                                        $roles = optional($user->roles())->pluck('display_name')->toArray();
+
+                                        foreach( $roles as $role)
+                                           {
+                                               ?>
+                                               <label class="col-lg-6" style="     color: white;
+    background-color: #04d848;
+    padding: 3px 0px 4px 0px;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-size: 1pc;
+    text-align: center;
+    width: 42%;
+    margin-right: 10px;">{{$role}}</label>
+                                               <?php
+                                           }
+                                    ?>
+                                </td>
 
 
                                 <td style=" text-align: center">
-                                    <a href="{{url('/roles/'.$role->id.'/edit')}}">
+                                    <a href="{{url('/users/'.optional($user)->id.'/edit')}}">
                                         <i class="fas fa-pen-square" style="color: #51a112;    font-size: 25px;"></i>
                                     </a>
                                 </td>
@@ -205,7 +226,7 @@
                                 <td style=" text-align: center">
                                     {!! Form::open(
                                                                    [
-                                                                        'url' =>'roles/'.$role->id,
+                                                                        'url' =>'users/'.$user->id,
                                                                        'method'=>'DELETE'
                                                                    ])
                                                                 !!}
@@ -233,21 +254,23 @@
                     </tbody>
                     <tfoot>
                         @CheckLang
-                            <tr>
-                                <th>{{__('sofra.delete')}}</th>
-                                <th>{{__('sofra.edit')}}</th>
-                                <th>{{__('sofra.display_name')}}</th>
-                                <th>{{__('sofra.name')}}</th>
-                                <th>{{__('sofra.id')}}</th>
-                            </tr>
+                        <tr>
+                            <th>{{__('sofra.delete')}}</th>
+                            <th>{{__('sofra.edit')}}</th>
+                            <th>{{__('sofra.role')}}</th>
+                            <th>{{__('sofra.email')}}</th>
+                            <th>{{__('sofra.name')}}</th>
+                            <th>{{__('sofra.id')}}</th>
+                        </tr>
                         @else
-                            <tr>
-                                <th>{{__('sofra.id')}}</th>
-                                <th>{{__('sofra.name')}}</th>
-                                <th>{{__('sofra.display_name')}}</th>
-                                <th>{{__('sofra.edit')}}</th>
-                                <th>{{__('sofra.delete')}}</th>
-                            </tr>
+                        <tr>
+                            <th>{{__('sofra.id')}}</th>
+                            <th>{{__('sofra.name')}}</th>
+                            <th>{{__('sofra.email')}}</th>
+                            <th>{{__('sofra.role')}}</th>
+                            <th>{{__('sofra.edit')}}</th>
+                            <th>{{__('sofra.delete')}}</th>
+                        </tr>
                         @endCheckLang
                     </tfoot>
                 </table>
@@ -256,7 +279,7 @@
         </div>
         </section>
 
-        @include('AdminDashBord.roles.add')
+        @include('AdminDashBord.users.add')
 @endsection
 
 

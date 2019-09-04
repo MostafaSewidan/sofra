@@ -18,7 +18,7 @@ return
         'city_page' => 'City Page',
         'ADD_City' => 'ADD City',
         'cites_table' => 'Cities Table',
-        'id' => 'ID',
+        'id' => '#',
         'name' => 'Name',
         'details' => 'Details',
         'districts' => 'Districts',
@@ -77,5 +77,6 @@ return
         'report_activate' => 'Report activate',
         'payment_block' => ' Payment block',
         'report_block' => ' Report block',
+        'display_name' => 'Display name',
 
     ];

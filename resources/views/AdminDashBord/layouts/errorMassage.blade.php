@@ -8,6 +8,7 @@
         {{session()->get('fail')}}
     </div>
 @endif
+
 @if(session()->get('success'))
     <div class="alert alert" role="alert" style="
         padding-left: 4pc;

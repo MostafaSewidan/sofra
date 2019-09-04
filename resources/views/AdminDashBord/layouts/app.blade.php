@@ -165,7 +165,12 @@
 
         {{--****************************************************************************************--}}
     @endCheckLang
-
+    <style>
+        .pagination>.active>a
+        {
+            z-index: 0;
+        }
+    </style>
 
         <link rel="stylesheet" href="{{asset('Adminlte_ltr/css/dataTables.bootstrap.min.css')}}">
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
