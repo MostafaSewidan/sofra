@@ -83,6 +83,7 @@
         </div>
 {{--**************************************************--}}
 
+
 {{--    **************(offers)***************************--}}
         <div class="col-lg-3 col-xs-6">
             <!-- small box -->
@@ -101,15 +102,7 @@
             </div>
         </div>
 {{--**************************************************--}}
-        <br><br>
-        <section class="content-header">
-            <h1>
-                {{__('sofra.contacts')}}
-                <small>{{__('sofra.contacts_adds')}}</small>
-            </h1>
-        </section>
 
-        <br><br>
 
 {{--    **************(contacts)***************************--}}
         <div class="col-lg-3 col-xs-6">
@@ -126,5 +119,7 @@
                 <a href="{{url('/contacts')}}" class="small-box-footer">{{__('sofra.More_info')}} <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
+
+
 {{--**************************************************--}}
 @endsection

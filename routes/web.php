@@ -45,7 +45,6 @@ Route::group(['middleware' =>['auth' , 'auto-check-permission']] , function (){
                 return view('AdminDashBord.users.change_password');
             }
             );
-            Route::post('/change-password' , 'UserController@change_password');
 
             /************************************************************************/
 

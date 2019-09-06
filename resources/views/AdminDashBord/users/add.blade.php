@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputFile">{{__('sofra.Image ')}}</label>
+                    <label for="exampleInputFile">{{__('sofra.Image')}}</label>
 
 
                     {!! Form::file('img') !!}
@@ -119,7 +119,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputFile">{{__('sofra.Image ')}}</label>
+                    <label for="exampleInputFile">{{__('sofra.Image')}}</label>
 
 
                     {!! Form::file('img') !!}
