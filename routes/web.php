@@ -38,6 +38,19 @@ Route::group(['middleware' =>['auth' , 'auto-check-permission']] , function (){
 
             });
 
+            /******************************(( change admin password ))************************/
+
+            Route::get('/change-password' , function ()
+            {
+                return view('AdminDashBord.users.change_password');
+            }
+            );
+            Route::post('/change-password' , 'UserController@change_password');
+
+            /************************************************************************/
+
+            /**
+
 
             /******************************(( City Module))************************/
 

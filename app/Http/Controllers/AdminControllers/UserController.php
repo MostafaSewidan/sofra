@@ -171,4 +171,38 @@ class UserController extends Controller
             return redirect('/users');
         }
     }
+
+    public function change_password(Request $request)
+    {
+
+        $data = validator()->make($request->all(),
+            [
+                'old_password' => 'required',
+                'password'=>'required|confirmed',
+
+            ]);
+
+        if($data->fails())
+        {
+            return redirect('/change-password')->withInput()->withErrors($data->errors());
+        }
+
+
+        $user = User::find(auth()->user()->id);
+
+        if($user)
+        {
+            if(Hash::check($request->old_password , $user->password))
+            {
+                $user->update(['password' => Hash::make($request->password)]);
+
+                session()->flash('success' , __('sofra.update_success'));
+                return redirect('/');
+            }else{
+
+                session()->flash('fail' , 'new password not confirmed');
+                return back();
+            }
+        }
+    }
 }
