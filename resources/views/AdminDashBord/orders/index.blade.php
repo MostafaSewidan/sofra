@@ -157,7 +157,7 @@
                                                 background: #ffffff00;
                                                 border: none;
                                             "
-                                            onclick="return confirm('{{__('sofra.confirm_delete')}}');">
+                                            onclick="return confirm('{{__('sofra.Please_confirm_delete')}}');">
 
                                     </button>
                                     {!! Form::close() !!}
@@ -208,7 +208,7 @@
                                                 background: #ffffff00;
                                                 border: none;
                                             "
-                                            onclick="return confirm('{{__('sofra.confirm_delete')}}');">
+                                            onclick="return confirm('{{__('sofra.Please_confirm_delete')}}');">
 
                                     </button>
                                     {!! Form::close() !!}

@@ -37,6 +37,113 @@
                 text-align: right;
             }
         </style>
+    <style>
+        body
+        {
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Cairo', sans-serif;
+
+        }
+        .menu_button
+        {
+            cursor: pointer;
+        }
+
+
+        .btn .label
+        {
+            padding: 0px 5px 0px 5px;
+        }
+
+        #contact_menu
+        {
+            background-color: white;
+            position: absolute;
+            width: 20pc;
+            right: 1px;
+            padding: 0px 1px 5px 2px;
+            list-style-type: none;
+            box-shadow: 4px 7px 13px -11px black;
+            border: 1px solid #9999998a;
+            border-radius: 0px 0px 4px 4px;
+        }
+
+        .menu
+        {
+            overflow: hidden;
+            width: 100%;
+            height: 200px;
+            list-style-type: none;
+            padding: 3px 1px 38px 2px;
+            font-size: 11px;
+        }
+
+        .p
+        {
+            text-align: center;
+            font-size: 17px;
+            margin-top: 3pc;
+            color: #444444;
+        }
+
+        .img-circle
+        {
+            margin: auto 10px auto auto;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+
+        #Complaint
+        {
+
+            color: #721c24;
+            background-color: #f8d7da;
+        }
+
+        #Complaint li
+        {
+            padding: 7px 1px 2px 6px;
+        }
+
+        #Complaint li:hover
+        {
+
+            background-color: #f9b3b9;
+            border-bottom: 1px solid #7a232942;
+        }
+
+        #Suggestion
+        {
+
+            color: #155724;
+            background-color: #d4edda;
+        }
+
+        #Suggestion li
+        {
+            padding: 7px 1px 2px 6px;
+        }
+
+        #Suggestion li:hover
+        {
+            background-color: #b8eac4;
+            border-bottom: 1px solid #d4edda94;
+        }
+
+        #Enquiry li
+        {
+            padding: 7px 1px 2px 6px;
+        }
+
+        #Enquiry li:hover
+        {
+            background-color: #545b62;
+            border-bottom: 1px solid #d4edda94;
+        }
+
+    </style>
 
     {{--****************************************************************************************--}}
     @else
@@ -219,7 +326,7 @@
                     <li class="dropdown user user-menu">
 
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="{{asset(Auth()->user()->img)}}" class="user-image" alt="User Image">
+                            <img src="{{asset(Auth()->user()->img)}}" class="user-image" alt="User Image" style="    margin-left: 1pc;">
                             <span class="hidden-xs">{{Auth()->user()->name}}</span>
                         </a>
                         <ul class="dropdown-menu">

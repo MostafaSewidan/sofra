@@ -85,7 +85,7 @@
     @else
         <section class="content-header">
             <h1>
-                {{__('sofra.City')}}
+                {{__('sofra.app_settings')}}
                 <small>{{__('sofra.app_settings_page')}}</small>
             </h1>
             <ol class="breadcrumb">
@@ -119,28 +119,28 @@
 
                     {!! Form::open(
                                                                         [
-                                                                             'url' =>'app-settings/'.$app_settings->id,
+                                                                             'url' =>'app-settings/'.optional($app_settings)->id,
                                                                             'method'=>'PUT'
                                                                         ])
                                                                      !!}
                     <div class="form-group">
                         <label for="exampleInputEmail1">{{__('sofra.about_app')}}</label>
-                        {!! Form::text('about_app' , $app_settings->about_app ,['class'=>"form-control"]) !!}
+                        {!! Form::text('about_app' ,optional( $app_settings )->about_app ,['class'=>"form-control"]) !!}
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">{{__('sofra.commission_sms')}}</label>
-                        {!! Form::text('commission_sms' , $app_settings->commission_sms ,['class'=>"form-control"]) !!}
+                        {!! Form::text('commission_sms' ,optional( $app_settings )->commission_sms ,['class'=>"form-control"]) !!}
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">{{__('sofra.alahle_account')}}</label>
-                        {!! Form::text('alahle_account' , $app_settings->alahle_account ,['class'=>"form-control"]) !!}
+                        {!! Form::text('alahle_account' ,optional( $app_settings )->alahle_account ,['class'=>"form-control"]) !!}
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">{{__('sofra.alraghe_account')}}</label>
-                        {!! Form::text('alraghe_account' , $app_settings->alraghe_account ,['class'=>"form-control"]) !!}
+                        {!! Form::text('alraghe_account' ,optional( $app_settings )->alraghe_account ,['class'=>"form-control"]) !!}
                     </div>
 
 

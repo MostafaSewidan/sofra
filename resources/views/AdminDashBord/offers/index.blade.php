@@ -105,7 +105,7 @@
 
             <div class="box">
             <div class="box-header">
-                <h3 class="box-title">{{__('sofra.cites_table')}}</h3>
+                <h3 class="box-title">{{__('sofra.offers_table')}}</h3>
 
             </div>
             <!-- /.box-header -->
@@ -169,8 +169,8 @@
                                 </td>
 
                                 <td style=" text-align: center">
-                                    <a href="{{url('/restaurant/'.optional($offer)->resturant()->first()->id)}}">
-                                        {{optional($offer)->resturant()->first()->name}}
+                                    <a href="{{url('/restaurant/'.optional($offer->resturant()->first())->id)}}">
+                                        {{optional($offer->resturant()->first())->name}}
                                     </a>
                                 </td>
 
@@ -186,8 +186,8 @@
                                 <td>{{optional($offer)->name}}</td>
 
                                 <td style=" text-align: center">
-                                    <a href="{{url('/restaurant/'.optional($offer)->resturant()->first()->id)}}">
-                                        {{optional($offer)->resturant()->first()->name}}
+                                    <a href="{{url('/restaurant/'.optional($offer->resturant()->first())->id)}}">
+                                        {{optional($offer->resturant()->first())->name}}
                                     </a>
                                 </td>
 

@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf787766-ba0d-4077-a4d3-63f6acd6f00d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/t.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RestaurantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RestaurantController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resturantPhotos/D9r4WSuZQcFO0DelhhvC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/sofra.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/sofra.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/sofra.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/sofra.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/roles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/users/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/users/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/appSettings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/appSettings/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/clients/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/clients/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/clients/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/payments/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/payments/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/payments/users/add.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/payments/users/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/payments/users/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,54 +42,28 @@
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+              <caret line="122" column="35" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/autoCheckPermission.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/lang/en/sofra.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/roles/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="169" column="100" selection-start-line="169" selection-start-column="100" selection-end-line="169" selection-end-column="100" />
-              <caret line="221" column="100" selection-start-line="221" selection-start-column="100" selection-end-line="221" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/users/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="145" selection-start-line="144" selection-end-line="145" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/users/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="169" column="100" selection-start-line="169" selection-start-column="100" selection-end-line="169" selection-end-column="100" />
-              <caret line="242" column="100" selection-start-line="242" selection-start-column="100" selection-end-line="242" selection-end-column="100" />
+            <state relative-caret-position="289">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="e#39#65#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,16 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MAIN NAVIGATION</find>
-      <find>online</find>
-      <find>scrp</find>
-      <find>class=&quot;fa fa-envelope-o&quot;</find>
-      <find>Data Table With Full Features</find>
-      <find>Rendering engine</find>
-      <find>class=&quot;content&quot;</find>
-      <find>class=&quot;row&quot;</find>
-      <find>img</find>
-      <find>dropdown messages-menu</find>
       <find>over</find>
       <find>see</find>
       <find>upda</find>
@@ -113,8 +90,18 @@
       <find>app</find>
       <find>delete_c</find>
       <find>IMA</find>
-      <find>conf</find>
       <find>con</find>
+      <find>conf</find>
+      <find>confirm_d</find>
+      <find>cite</find>
+      <find>name</find>
+      <find>confirm</find>
+      <find>Cit</find>
+      <find>المج</find>
+      <find>app_S</find>
+      <find>user-image</find>
+      <find>cha</find>
+      <find>ci</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,27 +110,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/clients/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/clients/show.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_23_150525_create_clients_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/orders/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/orders/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/OrderController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/ClientOrderCycleController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiControllers/RestaurantOrderCycleController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_01_122904_create_payments_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Payment.php" />
         <option value="$PROJECT_DIR$/resources/views/payments/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/payments/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Resturant.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/payments/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/districts/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/payments/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/PaymentController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RestaurantController.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/show.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
@@ -151,19 +125,16 @@
         <option value="$PROJECT_DIR$/config/entrust.php" />
         <option value="$PROJECT_DIR$/app/Models/Permission.php" />
         <option value="$PROJECT_DIR$/app/Models/Role.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/roles/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RoleController.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/errorMassage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/payments/users/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/autoCheckPermission.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/ClientController.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/roles/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/403.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_03_093024_entrust_setup_tables.php" />
-        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/users/change_password.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php" />
@@ -171,9 +142,25 @@
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/users/add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/users/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/AdminDashBord/roles/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/sofra.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/clients/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/clients/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RestaurantController.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/orders/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/payments/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/appSettings/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/sofra.php" />
+        <option value="$PROJECT_DIR$/resources/lang/ar/sofra.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/routes/blade.php" />
+        <option value="$PROJECT_DIR$/routes/t.php" />
+        <option value="$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/autoCheckPermission.php" />
       </list>
     </option>
   </component>
@@ -308,33 +295,12 @@
               <item name="sofra" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sofra" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminControllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
               <item name="sofra" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sofra" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sofra" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
@@ -355,20 +321,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="AdminDashBord" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sofra" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminDashBord" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sofra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sofra" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -476,12 +429,12 @@
       <workItem from="1567478101160" duration="17582000" />
       <workItem from="1567572612544" duration="10826000" />
       <workItem from="1567686530213" duration="6046000" />
-      <workItem from="1567761620432" duration="6916000" />
+      <workItem from="1567761620432" duration="15662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316476000" />
+    <option name="totallyTimeSpent" value="325222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -535,109 +488,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/PaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="142" column="73" selection-start-line="142" selection-start-column="73" selection-end-line="142" selection-end-column="73" />
-          <folding>
-            <element signature="e#57#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Resturant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_02_214501_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="167" column="24" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/districts/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3451">
-          <caret line="210" column="122" selection-start-line="210" selection-start-column="62" selection-end-line="210" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="167" column="77" selection-start-line="167" selection-start-column="77" selection-end-line="167" selection-end-column="77" />
-          <caret line="173" column="78" selection-start-line="173" selection-start-column="78" selection-end-line="173" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiControllers/ClientOrderCycleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4505">
-          <caret line="271" column="25" selection-start-line="271" selection-start-column="20" selection-end-line="271" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/contacts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RestaurantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding>
-            <element signature="e#57#82#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="228" column="59" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/zizaco/entrust/src/commands/MigrationCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
@@ -762,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4913">
-          <caret line="294" selection-start-line="294" selection-end-line="379" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/errors/403.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -782,16 +625,6 @@
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="e#57#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/autoCheckPermission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="e#39#65#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,41 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5389">
-          <caret line="317" column="52" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/ar/sofra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/users/change_password.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="69" column="80" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
-          <folding>
-            <element signature="e#57#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -882,24 +684,179 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/clients/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="144" column="72" selection-start-line="144" selection-start-column="72" selection-end-line="144" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/clients/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="161" column="81" selection-start-line="161" selection-start-column="81" selection-end-line="161" selection-end-column="81" />
+          <caret line="260" column="81" selection-start-line="260" selection-start-column="81" selection-end-line="260" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="144" column="80" selection-start-line="144" selection-start-column="80" selection-end-line="144" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/restaurants/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="322" column="102" selection-start-line="322" selection-start-column="102" selection-end-line="322" selection-end-column="102" />
+          <caret line="163" column="102" selection-start-line="163" selection-start-column="102" selection-end-line="163" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/RestaurantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/orders/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="159" column="82" selection-start-line="159" selection-start-column="82" selection-end-line="159" selection-end-column="82" />
+          <caret line="210" column="82" selection-start-line="210" selection-start-column="82" selection-end-line="210" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/offers/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="172" column="86" selection-start-line="172" selection-start-column="82" selection-end-line="172" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/offers/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-674">
+          <caret line="88" column="91" selection-start-line="88" selection-start-column="91" selection-end-line="88" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/payments/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="176" column="88" selection-start-line="176" selection-start-column="88" selection-end-line="176" selection-end-column="88" />
+          <caret line="230" column="88" selection-start-line="230" selection-start-column="88" selection-end-line="230" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/appSettings/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="87" column="40" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ar/sofra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/sofra.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+        <state relative-caret-position="-2275">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="159" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/contacts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="328" column="134" selection-start-line="328" selection-start-column="134" selection-end-line="328" selection-end-column="134" />
+          <folding>
+            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/channels.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/t.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="61" selection-end-line="8" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <caret line="122" column="35" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminControllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/AdminDashBord/layouts/treeview.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="165">
+          <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/autoCheckPermission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#39#65#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

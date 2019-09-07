@@ -33,7 +33,7 @@
                 <div class="box box-primary">
                     <br>
                     <center>
-                        <img src="{{asset(optional($offer)->image()->first()->name)}}" style ="    width: 398px;
+                        <img src="{{asset(optional($offer->image()->first())->name)}}" style ="    width: 398px;
     /* height: 19pc; */
     border-radius: 169px;
     box-shadow: 9px 8px 33px -14px #00000096;
@@ -86,7 +86,7 @@
         background-color: #fff3cd;
             padding-left: 2pc;
         border-color: #ffeeba;">
-                            <h3 class="box-title"> {{optional($offer)->resturant()->first()->name}} : {{__('sofra.restaurant')}}</h3>
+                            <h3 class="box-title"> {{optional($offer->resturant()->first())->name}} : {{__('sofra.restaurant')}}</h3>
                         </div>
 
                     @else

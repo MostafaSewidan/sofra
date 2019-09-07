@@ -142,7 +142,7 @@
                                                                    !!}
 
                             <button  type="submit" class="btn btn-danger" style="margin-right: 1pc"
-                               onclick="return confirm('Please confirm delete');"
+                               onclick="return confirm(__('sofra.Please_confirmp_delete'));"
                             >
                                 <i class="fas fa-trash-alt"  style="font-size: 21px;color: white;">
                                     {{__('sofra.delete')}}
